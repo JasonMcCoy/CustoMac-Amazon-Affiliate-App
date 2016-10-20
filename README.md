@@ -1,6 +1,9 @@
 # CustoMac Amazon Affiliate App - A customizable UI Animated side menu component with 'rubbery' effect where when a button is pressed, it will take them to an amazon product page.
 # By Jason McCoy
 
+Written in Swift 2.2 and Objective-C
+
+
 [![Platform](http://img.shields.io/badge/platform-iOS-blue.svg?style=flat)](http://cocoapods.org/?q=YALSideMenu)
 [![License](http://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/Yalantis/Side-Menu.iOS/blob/master/LICENSE)
 
