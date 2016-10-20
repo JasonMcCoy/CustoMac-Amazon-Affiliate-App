@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WebViewController">
+            <connections>
+                <outlet property="amazonWebView" destination="oEh-GH-jUg" id="eet-Uw-aiD"/>
+                <outlet property="img" destination="EXZ-UC-dro" id="vTb-xV-hI9"/>
+                <outlet property="view" destination="iN0-l3-epB" id="wBg-iF-UJL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EXZ-UC-dro">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                </imageView>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oEh-GH-jUg">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="bJe-ZC-ag9"/>
+                    </connections>
+                </webView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="oEh-GH-jUg" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="1Af-Rt-n5d"/>
+                <constraint firstItem="oEh-GH-jUg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="80" id="1Os-sW-Z4Y"/>
+                <constraint firstItem="EXZ-UC-dro" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="KKs-Wo-tbb"/>
+                <constraint firstAttribute="trailing" secondItem="oEh-GH-jUg" secondAttribute="trailing" id="ahV-qh-p5h"/>
+                <constraint firstItem="EXZ-UC-dro" firstAttribute="trailing" secondItem="oEh-GH-jUg" secondAttribute="trailing" id="epH-o9-aUo"/>
+                <constraint firstItem="EXZ-UC-dro" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="fJM-vS-3Tu"/>
+                <constraint firstItem="oEh-GH-jUg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fvO-85-dey"/>
+                <constraint firstItem="EXZ-UC-dro" firstAttribute="leading" secondItem="oEh-GH-jUg" secondAttribute="leading" id="xuh-gu-hZ9"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="EXZ-UC-dro"/>
+                    <exclude reference="oEh-GH-jUg"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="KKs-Wo-tbb"/>
+                    <exclude reference="epH-o9-aUo"/>
+                    <exclude reference="fJM-vS-3Tu"/>
+                    <exclude reference="xuh-gu-hZ9"/>
+                    <exclude reference="1Af-Rt-n5d"/>
+                    <exclude reference="1Os-sW-Z4Y"/>
+                    <exclude reference="ahV-qh-p5h"/>
+                    <exclude reference="fvO-85-dey"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="EXZ-UC-dro"/>
+                    <include reference="oEh-GH-jUg"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="KKs-Wo-tbb"/>
+                    <include reference="epH-o9-aUo"/>
+                    <include reference="fJM-vS-3Tu"/>
+                    <include reference="xuh-gu-hZ9"/>
+                    <include reference="1Af-Rt-n5d"/>
+                    <include reference="1Os-sW-Z4Y"/>
+                    <include reference="ahV-qh-p5h"/>
+                    <include reference="fvO-85-dey"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
